@@ -5,7 +5,7 @@ import './TodoItem.css';
 
 function TodoItem(props) {
   return (
-    <li className={`TodoItem TodoItem--${props.completed}`}>
+    <li className={`TodoItem TodoItem-complete--${props.completed}`}>
       <CompleteIcon
         completed={props.completed}
         onComplete={props.onComplete}

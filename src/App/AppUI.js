@@ -24,13 +24,16 @@ function AppUI() {
   
   return (
     <React.Fragment>
-      <TodoCounter />
-      <TodoSearch />
+      {!loading && (<TodoCounter />)}
+      {!loading && (<TodoSearch />)}
+      
 
-      <TodoList>
+      <TodoList
+      active={`${!searchedTodos.length}--${!loading}`}
+      >
         {error && <TodosError error={error}/>}
         {loading && <TodosLoading/>}
-        {(!loading && !searchedTodos.length) && <EmptyTodos/>}
+        {(!loading && !searchedTodos.length) && (<EmptyTodos />)}
         
         {searchedTodos.map(todo => (
           <TodoItem

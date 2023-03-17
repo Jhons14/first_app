@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(./assets/sky.jpg);
+  background: hwb(0 100% 0%);
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
@@ -10,4 +10,6 @@ body {
   margin: 0 24px;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

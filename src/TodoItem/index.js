@@ -15,8 +15,7 @@ function TodoItem(props) {
       </p>
       <DeleteIcon
         onDelete={props.onDelete}
-      />
-        
+      />        
     </li>
   );
 }

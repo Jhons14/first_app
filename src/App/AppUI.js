@@ -10,6 +10,7 @@ import { TodoForm } from '../TodoForm';
 import { TodosLoading } from "../TodosLoading";
 import { EmptyTodos } from "../EmptyTodos";
 import { TodosError } from "../TodosError";
+import { TodoHeader } from '../TodoHeader';
 
 function AppUI() {
   const {
@@ -20,14 +21,26 @@ function AppUI() {
     deleteTodo,
     openModal,
     setOpenModal,
+    totalTodos, 
+    completedTodos,
+    searchValue, 
+    setSearchValue
   } = React.useContext(TodoContext)
   
   return (
     <React.Fragment>
-      {!loading && (<TodoCounter />)}
-      {!loading && (<TodoSearch />)}
-      
-
+      <TodoHeader>
+        {!loading && (
+        <TodoCounter 
+          totalTodos = {totalTodos}
+          completedTodos = {completedTodos}
+        />)}
+        {!loading && (
+        <TodoSearch 
+          searchValue = {searchValue}
+          setSearchValue = {setSearchValue}
+        />)}
+      </TodoHeader>
       <TodoList
       active={`${!searchedTodos.length}--${!loading}`}
       >
@@ -49,7 +62,7 @@ function AppUI() {
       {!!openModal && ([
         <Modal>
           <TodoForm/>
-        </Modal>        
+        </Modal>
       ])}
 
       <CreateTodoButton 

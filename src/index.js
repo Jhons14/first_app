@@ -8,6 +8,6 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <App/>,
-);
+)
 
 

@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/first_app/static/css/main.100fc91b.css",
-    "main.js": "/first_app/static/js/main.1f79002b.js",
-    "static/media/checkIcon.svg": "/first_app/static/media/checkIcon.c608751ed9f5523f12b3d191606b0dc3.svg",
-    "index.html": "/first_app/index.html",
-    "static/media/closeIcon.svg": "/first_app/static/media/closeIcon.762a4ad956193ff87b793e664dfe3efb.svg",
-    "main.100fc91b.css.map": "/first_app/static/css/main.100fc91b.css.map",
-    "main.1f79002b.js.map": "/first_app/static/js/main.1f79002b.js.map"
+    "main.css": "/react-router-proyecto2/static/css/main.5f869464.css",
+    "main.js": "/react-router-proyecto2/static/js/main.23ba29a0.js",
+    "index.html": "/react-router-proyecto2/index.html",
+    "static/media/delete.svg": "/react-router-proyecto2/static/media/delete.331149da222541bc87c25bf8d775a070.svg",
+    "static/media/edit.svg": "/react-router-proyecto2/static/media/edit.900a8fd203adc364a82d0ebc6ad8dc94.svg",
+    "static/media/check.svg": "/react-router-proyecto2/static/media/check.fa4fb594b16385306a04b9c87c0feb55.svg",
+    "main.5f869464.css.map": "/react-router-proyecto2/static/css/main.5f869464.css.map",
+    "main.23ba29a0.js.map": "/react-router-proyecto2/static/js/main.23ba29a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.100fc91b.css",
-    "static/js/main.1f79002b.js"
+    "static/css/main.5f869464.css",
+    "static/js/main.23ba29a0.js"
   ]
 }

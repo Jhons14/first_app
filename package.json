@@ -1,18 +1,21 @@
 {
-  "name": "react-router-proyecto2",
+  "name": "todo_creator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@vitejs/plugin-react": "^4.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
+    "vite": "^5.4.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "dev": "vite",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,7 +43,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^6.1.1"
   },
-  "homepage": "https://Jhons14/react-router-proyecto2"
+  "homepage": "https://Jhons14/todo_creator"
 }

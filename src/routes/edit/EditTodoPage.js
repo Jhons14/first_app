@@ -1,6 +1,7 @@
 import { useLocation, useParams } from 'react-router-dom';
 import { TodoForm } from '../../ui/TodoForm';
 import { useTodos } from '../useTodos';
+import { Modal } from '../../ui/Modal';
 function EditTodoPage() {
   const { state, stateUpdaters } = useTodos();
   const { getTodo, loading } = state;
@@ -21,12 +22,14 @@ function EditTodoPage() {
     todoText = todo.text;
   }
   return (
-    <TodoForm
-      label='Edita tu todo'
-      submitText='Editar'
-      defaultText={todoText}
-      submitEvent={(newText) => editTodo(id, newText)}
-    />
+    <Modal>
+      <TodoForm
+        label='Edita tu todo'
+        submitText='Editar'
+        defaultText={todoText}
+        submitEvent={(newText) => editTodo(id, newText)}
+      />
+    </Modal>
   );
 }
 export { EditTodoPage };
